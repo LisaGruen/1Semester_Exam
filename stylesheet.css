@@ -1,1 +1,57 @@
-newstylesheet
+@import @import url("https://use.typekit.net/ssc2rrr.css");
+
+body {
+    background-color: #EAE7DC;
+}
+
+.logo {
+    height: 80px;
+    width: 80px;
+    top: 20px;
+    left: 50px;
+
+}
+
+.menu {
+    font-family: mr-eaves-modern, sans-serif;
+    display: inline-block;
+    float: right;
+    color: red;
+    margin-top: 25px;
+
+}
+
+h1 {
+    font-family: mr-eaves-modern, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4em;
+}
+
+h2 {
+    font-family: mr-eaves-modern, sans-serif;
+    font-size: 2.2em;
+    /* px, em, rem, % */
+    line-height: 1.2em;
+    text-align: justify;
+}
+
+/* unvisited link */
+a:link {
+    color: black;
+}
+
+/* visited link */
+a:visited {
+    color: gray;
+}
+
+/* mouse over link */
+a:hover {
+    color: #E98074;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
