@@ -1,4 +1,4 @@
-@import @import url("https://use.typekit.net/ssc2rrr.css");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
 body {
     background-color: #EAE7DC;
@@ -11,7 +11,7 @@ body {
 }
 
 .menu {
-    font-family: 'mr-eaves-modern', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 1.5em;
@@ -23,7 +23,7 @@ body {
 }
 
 h1 {
-    font-family: 'mr-eaves-modern', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 100;
     font-style: normal;
     font-size: 1.7em;
@@ -33,17 +33,17 @@ h1 {
 }
 
 h2 {
-    font-family: 'mr-eaves-modern', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 100;
     font-style: normal;
     font-size: 1em;
     /* px, em, rem, % */
-    line-height: 0.9 em;
+    line-height: 0.9em;
     text-align: left;
 }
 
 p {
-    font-family: 'mr-eaves-modern', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 100;
     font-style: normal;
     font-size: 1.7em;
@@ -54,12 +54,14 @@ p {
 
 /* unvisited link */
 a:link {
+    font-family: 'Open Sans', sans-serif;
     color: black;
     text-decoration: none;
 }
 
 /* visited link */
 a:visited {
+    font-family: 'Open Sans', sans-serif;
     color: black;
     font-weight: 100;
     text-decoration: none;
@@ -67,12 +69,14 @@ a:visited {
 
 /* mouse over link */
 a:hover {
+    font-family: 'Open Sans', sans-serif;
     color: #E98074;
     text-decoration: none;
 }
 
 /* selected link */
 a:active {
+    font-family: 'Open Sans', sans-serif;
     color: #E98074;
     text-decoration: none;
 }
@@ -89,6 +93,7 @@ a:active {
     margin-left: 50px;
     margin-right: 50px;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .content-banner {}
@@ -113,8 +118,7 @@ a:active {
 /*Footer*/
 
 .footer {
-    font-family: 'mr-eaves-modern', sans-serif;
-
+    font-family: 'Open Sans', sans-serif;
     /*margin-top: 25px;
     margin-left: 50px;
     margin-right: 50px;*/
@@ -124,24 +128,22 @@ a:active {
 }
 
 .footer-left {
-    font-family: 'mr-eaves-modern', sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 1em;
 
-    line-height: 0.9 em;
+    line-height: 0.9em;
     text-align: left;
     margin-top: 15px;
     margin-left: 50px;
 }
 
 .footer-middle {
-    font-family: 'mr-eaves-modern', sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 1em;
 
-    line-height: 0.9 em;
+    line-height: 0.9em;
     text-align: left;
 }
 
@@ -166,7 +168,7 @@ a:active {
 }
 
 /* Responsive layout - makes one column-layout instead 2 or 3 columns */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 500px) {
     .content-grid {
         grid-template-columns: auto;
     }
@@ -189,7 +191,25 @@ a:active {
     height: auto;
 }
 
+.content-banner iframe.responsive {
+    width: 100%;
+    height: 500px;
+}
+
+@media screen and (max-width: 500px) {
+    .content-banner iframe.responsive {
+        height: 300px;
+    }
+}
+
 /*** End Page structure ***/
+
+/** Portfolio.html */
+.teaser:hover {
+    opacity: 0.7;
+    background-color: #1c1b1a;
+    box-shadow: 0px 0px 4px #222;
+}
 
 /*About Text*/
 .about-text {
@@ -217,7 +237,7 @@ a:active {
     width: 30%;
     padding-left: 20px;
     margin-top: 10px;
-}
+}<
 
 .left-column {
     display: inline-block;
@@ -244,7 +264,6 @@ a:active {
 
 /*link*/
 .links {
-    font-family: 'mr-eaves-modern', sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 1.5em;
@@ -252,4 +271,10 @@ a:active {
     float: left;
     margin-top: 25px;
 
+}
+
+/*UFO Animation*/
+
+#ufo {
+    max-width: 200px;
 }
