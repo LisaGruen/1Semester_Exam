@@ -167,6 +167,7 @@ a:active {
     padding-right: 20px;
 }
 
+
 /* Responsive layout - makes one column-layout instead 2 or 3 columns */
 @media screen and (max-width: 500px) {
     .content-grid {
@@ -175,6 +176,11 @@ a:active {
 
     .grid-container {
         grid-template-columns: auto;
+    }
+
+    .grid-container div:nth-child(2) {
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .footer {
