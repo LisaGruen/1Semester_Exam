@@ -19,7 +19,10 @@ body {
     float: right;
     margin-top: 25px;
     margin-right: 50px;
+}
 
+.menu a {
+    margin-left: 15px;
 }
 
 h1 {
@@ -132,7 +135,7 @@ a:active {
     font-style: normal;
     font-size: 1em;
 
-    line-height: 0.9em;
+    line-height: 1.5em;
     text-align: left;
     margin-top: 15px;
     margin-left: 50px;
@@ -143,13 +146,14 @@ a:active {
     font-style: normal;
     font-size: 1em;
 
-    line-height: 0.9em;
+    line-height: 1.5em;
     text-align: left;
 }
 
 .grafik {
-    width: 70px;
+    width: 100px;
     top: 30px;
+    border-bottom: 12%;
     float: right;
     margin-right: 50px;
 }
@@ -214,7 +218,6 @@ a:active {
 .teaser:hover {
     opacity: 0.7;
     background-color: #1c1b1a;
-    box-shadow: 0px 0px 4px #222;
 }
 
 /*About Text*/
@@ -222,16 +225,18 @@ a:active {
     display: block;
     margin-left: 50px;
     margin-right: 50px;
-
 }
 
+.portfolio .menu a:nth-child(1),
+.about .menu a:nth-child(2) {
+    text-decoration: underline;
+}
 
 .aboutgrafik {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 100px;
-
 }
 
 /*
@@ -261,11 +266,10 @@ a:active {
 }
 
 /*Video*/
-.video {
-    width: 100%;
-    height: 100%;
-    margin-right: 50px;
-    margin-left: 50px;
+.cycleguide-video video {
+    width: 100% !important;
+    height: auto !important;
+
 }
 
 /*link*/
@@ -283,4 +287,73 @@ a:active {
 
 #ufo {
     max-width: 200px;
+}
+
+#animateme {
+    width: 50%;
+    outline: 2px black;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    background: transparent;
+    color: black;
+    border: 2px solid black;
+    height: 38px;
+    line-height: 20px;
+    display: inline-block;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.shake {
+    animation: shake 0.5s;
+    animation-iteration-count: 0, 5;
+    animation-timing-function: cubic-bezier(.63, .27, .8, .39);
+    animation-iteration-count: 3;
+
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(0vw, 0vh) rotate(0deg);
+    }
+
+    25% {
+        transform: translate(5vw, 2vh) rotate(50deg);
+    }
+
+    75% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-5vw, 2vh) rotate(-50deg);
+    }
+
+}
+
+/**Index page*/
+
+.index header {
+    display: none;
+}
+
+.index .about-text h1 {
+    text-align: center;
+    margin: auto;
+}
+
+#index-portrait {
+    height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+/**basic web*/
+.side-video {
+    width: 100%;
+    height: 240px;
+    margin-top: 50px;
 }
