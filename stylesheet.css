@@ -173,7 +173,7 @@ a:active {
 
 
 /* Responsive layout - makes one column-layout instead 2 or 3 columns */
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
     .content-grid {
         grid-template-columns: auto;
     }
@@ -206,7 +206,7 @@ a:active {
     height: 500px;
 }
 
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
     .content-banner iframe.responsive {
         height: 300px;
     }
